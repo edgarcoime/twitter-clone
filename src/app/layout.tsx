@@ -1,4 +1,6 @@
+import React from 'react'
 import './globals.css'
+import RootPageLayout from '@/components/navigation/RootPageLayout'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <RootPageLayout>
+          {children}
+        </RootPageLayout>
+      </body>
     </html>
   )
 }
