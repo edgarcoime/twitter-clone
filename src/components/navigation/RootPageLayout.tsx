@@ -1,3 +1,4 @@
+import FollowBar from "./FollowBar";
 import Sidebar from "./Sidebar";
 
 interface RootPageLayoutProps {
@@ -19,6 +20,7 @@ const RootPageLayout: React.FC<RootPageLayoutProps> = ({ children }) => {
           ">
             {children}
           </div>
+          <FollowBar />
         </div>
       </div>
     </div>
